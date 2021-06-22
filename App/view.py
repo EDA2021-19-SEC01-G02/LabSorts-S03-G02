@@ -69,6 +69,16 @@ def printAuthorData(author):
     else:
         print('No se encontro el autor')
 
+def printResults(ord_books, sample=10):
+    size = lt.size(ord_books)
+    if size > sample:
+        print("Los primeros ", sample, " libros ordenados son:")
+        i=1
+        while i <= sample:
+            book = lt.getElement(ord_books,i)
+            print('Titulo: ' + book['title'] + ' ISBN: ' +
+                book['isbn'] + ' Rating: ' + book['average_rating'])
+            i+=1
 
 def printBestBooks(books):
     size = lt.size(books)
@@ -116,8 +126,8 @@ while True:
     elif int(inputs[0]) == 5:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
-        print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ",
-                                          str(result))
+        print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ", str(result[0]))
+        printResults(result[1])
 
     else:
         sys.exit(0)
