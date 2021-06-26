@@ -26,8 +26,14 @@ Este directorio contiene todo el código de base que se entrega para el funciona
     |--Algorithms: Implementación de los algoritmos vistos en el curso (por ejemplo algoritmos de ordenamiento)
 
     |-- Utils: Funciones auxiliares para el funcionamiento de los TADs y estructuras de datos
+<<<<<<< HEAD
 
     Andres Fernando Galvis af.galvis@uniandes.edu.co 201632930
     Alejandro Palomino A.palomino@uniandes.edu.co 201913699
 
+=======
+    
+    Andres Fernando Galvis af.galvis@uniandes.edu.co 201632930
+    Alejandro Palomino A.palomino@uniandes.edu.co 201913699
+>>>>>>> 84a83dd3985882225f792034e6d0f2bc0a829990
 
